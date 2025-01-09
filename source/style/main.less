@@ -1,8 +1,28 @@
-body{
-    background-color: red;
 
-    h1{
-        background-color: rgb(52, 52, 127);
-        color: black;
+@import 'var.less';
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 767px) and (max-width: 1023px)";
+
+body{
+    background-color: @backgroundColor;
+    color: @textColor;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    //Resolução maior na frente
+    @media @breakpointTablet{
+        max-width: 80%;
+        background-color: yellow;
+    }
+
+    @media @breakpointMobile{
+        max-width: 70%;
+        background-color: red;
     }
 }
+
+

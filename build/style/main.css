@@ -1,7 +1,21 @@
 body {
-  background-color: red;
+  background-color: #192a56;
+  color: #f5f6fa;
 }
-body h1 {
-  background-color: #34347f;
-  color: black;
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+    background-color: yellow;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+    background-color: red;
+  }
 }
