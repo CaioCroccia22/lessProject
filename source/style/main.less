@@ -3,9 +3,22 @@
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 767px) and (max-width: 1023px)";
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
     background-color: @backgroundColor;
     color: @textColor;
+}
+
+header{
+    background-color: @backgroundColor;
+    padding: 24px;
 }
 
 .container{
@@ -16,12 +29,12 @@ body{
     //Resolução maior na frente
     @media @breakpointTablet{
         max-width: 80%;
-        background-color: yellow;
+        
     }
 
     @media @breakpointMobile{
         max-width: 70%;
-        background-color: red;
+        
     }
 }
 
